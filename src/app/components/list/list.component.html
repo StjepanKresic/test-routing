@@ -1,0 +1,11 @@
+<div style="display: flex">
+  <div
+    class="room"
+    *ngFor="let room of rooms"
+    (click)="navigateToDetail(room.id)"
+  >
+    Id: {{ room.id }}
+    <br />
+    Name: {{ room.name }}
+  </div>
+</div>
